@@ -79,7 +79,7 @@ public class MaterialMultiSelectListPreference extends MultiSelectListPreference
         for (String s : getValues()) {
             int index = findIndexOfValue(s);
             if (index >= 0)
-                indices.add(findIndexOfValue(s));
+                indices.add(index);
         }
         MaterialDialog.Builder builder = new MaterialDialog.Builder(context)
                 .title(getDialogTitle())
